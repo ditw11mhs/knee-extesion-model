@@ -21,11 +21,11 @@ class Main:
         camera_radius = st.sidebar.slider("Camera Radius", 0, 500, 190)
         camera_theta = st.sidebar.slider("Camera Theta", 0, 360, 90)
         camera_phi = st.sidebar.slider("Camera Phi", 0, 360, 0)
-        H = 183
+        H = st.slider("Body Height", 0, 200, 183)
         l1 = 0.245 * H
         l2 = 0.246 * H
         l3 = 0.152 * H
-        M = 93
+        M = st.slider("Body Mass", 0, 200, 93)
         
         time = np.arange(0, 5, 0.001)
         f_shoulder = 0.25
